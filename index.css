@@ -1,3 +1,131 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #2F2F2F;
+}
+a {
+    text-decoration: none;
+}
+.top-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #262626;
+}
+.top-nav li {
+    float: left;
+}
+.top-nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 30px 10px;
+    text-decoration: none;
+    font-size: 16px;
+}
+.top-nav li a:hover:not(.logo) {
+    background-color: black;
+    color: darkorange;
+}
+#logo {
+    padding: 0px;
+    height: 80px;
+    /*margin-left: 100px;
+    margin-right: 50%;*/
+    background-color: transparent;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+@media only screen and (min-width: 300px) {
+    .top-nav li {width: 100%;}
+    #logo {margin-left: 0px;
+           margin-right: 0%;
+    }
+    .top-nav li a {padding: 15px 10px;}
+}
+
+@media only screen and (min-width: 600px) {
+    .top-nav li {width: 50%;}
+    #logo {margin-left: 0px;
+           margin-right: 0%;
+    }
+    .top-nav li a {padding: 15px 10px;}
+}
+
+@media only screen and (min-width: 900px) {
+    .top-nav li {width: inherit;}
+    #logo {margin-left: 0px;
+           margin-right: 0%;
+    }
+    .top-nav li a {padding: 30px 10px;}
+}
+
+@media only screen and (min-width: 1024px) {
+    .top-nav li {width: inherit;}
+    #logo {margin-left: 0px;
+           margin-right: 50%;
+    } 
+}
+
+@media only screen and (min-width: 1200px) {
+    #logo {margin-left: 100px;
+           margin-right: 50%;
+    } 
+}
+.btn-details {
+    position: absolute;
+    top: 89.6%;
+    left: 12%;
+    background-color: rgba(106, 111, 106, 0.4);
+    color: white;
+    padding: 8px 20px;
+    border: 1px solid white;
+    font-size: 1.25vw;
+}
+.btn-details:hover {
+    background-color: transparent;
+}
+
+/*----- Footer -----*/
+footer {
+    margin-top: 30px;
+}
+
+.footer-line {
+    width: 95%;
+    height: 2px;
+    background-color: white;
+    margin: 0 auto;
+}
+
+.icon {
+    list-style-type: none;
+}
+
+.icon li {
+    float: left;
+    padding: 0px 10px 40px 0px;
+}
+
+.footer-map {
+    text-align: right;
+    padding-right: 40px;
+    margin-top: 15px;
+}
+
+.footer-map a {
+    color: white;
+    border: 1px solid white;
+    padding: 4px;
+    white-space: nowrap;
+}
+=======
 ﻿body {
     margin: 0;
     padding: 0;

@@ -1,0 +1,154 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    /*background-color: #2F2F2F;*/
+    /*background-image:url("images/impala-8.jpg");*/
+    /*background-repeat: no-repeat;*/
+}
+
+.top-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #262626;
+}
+.top-nav li {
+    float: left;
+}
+.top-nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 30px 10px;
+    text-decoration: none;
+    font-size: 16px;
+}
+.top-nav li a:hover:not(.logo) {
+    background-color: black;
+    color: darkorange;
+}
+#logo {
+    padding: 0px;
+    height: 80px;
+    /*margin-left: 100px;
+    margin-right: 50%;*/
+    background-color: transparent;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+@media only screen and (min-width: 300px) {
+    .model-list-3 {width: 287px;}
+    .top-nav li {width: 100%;}
+    #logo {margin-left: 0px;
+           margin-right: 0%;
+    }
+    .top-nav li a {padding: 15px 10px;}
+}
+
+@media only screen and (min-width: 600px) {
+    .model-list-2 {width: 574px;}
+    .top-nav li {width: 50%;}
+    #logo {margin-left: 0px;
+           margin-right: 0%;
+    }
+    .top-nav li a {padding: 15px 10px;}
+}
+
+@media only screen and (min-width: 900px) {
+    .model-list {width: 862px;}
+    .top-nav li {width: inherit;}
+    #logo {margin-left: 0px;
+           margin-right: 0%;
+    }
+    .top-nav li a {padding: 30px 10px;} 
+}
+
+@media only screen and (min-width: 1024px) {
+    .top-nav li {width: inherit;}
+    #logo {margin-left: 0px;
+           margin-right: 50%;
+    } 
+}
+
+@media only screen and (min-width: 1200px) {
+    #logo {margin-left: 100px;
+           margin-right: 50%;
+    } 
+}
+
+.model-list {
+    margin: 0px auto;
+    padding-top: 15px;
+}
+.model {
+    float: left;
+    margin: 10px;
+    background-color: white;
+}
+.model:hover {
+    /*background-color: dimgrey;*/
+    box-shadow: 0px 0px 4px 4px #cccccc;
+}
+figcaption {
+    text-align: center;
+    border-top: 1px solid black;
+    padding-top: 5px;
+    margin: 0px 10px 0px 10px;
+    color: black;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+.model > p {
+    color: gray;
+    padding-bottom: 5px;
+    font-size: 14px;
+    text-align: center;
+    margin: 0px;
+}
+
+/*----- Footer -----*/
+footer {
+    margin-top: 30px;
+}
+
+.footer-line {
+    width: 95%;
+    height: 2px;
+    background-color: #262626;
+    margin: 0 auto;
+}
+
+.icon {
+    color: gray;
+}
+
+.icon ul {
+    list-style-type: none;
+}
+
+.icon ul li {
+    float: left;
+    padding: 0px 10px 40px 0px;
+}
+
+.footer-map {
+    text-align: right;
+    padding-right: 40px;
+    margin-top: 15px;
+}
+
+.footer-map a {
+    color: black;
+    text-decoration: none;
+}
+
+.footer-map a:hover {
+    text-decoration: underline;
+}
