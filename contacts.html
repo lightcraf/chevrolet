@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html>
+    <head lang="uk-UA">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Chevrolet - Contacts</title>
+        <link rel="icon" href="/favicon.ico" type="image/x-icon">
+	    <link rel="stylesheet" href="contacts.css">
+    </head>
+<body>
+    <header>
+        <nav>
+            <ul class="top-nav">
+                <li><a href="index.html" id="logo"><img src="images/Chevrolet-logo2.png" alt="Chevrolet - Find new roads" /></a></li>
+                <li><a href="all_cars.html">Модельний ряд</a></li>
+                <li><a href="accessories.html">Аксесуари</a></li>
+                <li><a href="#">Сервіс та запчастини</a></li>
+                <li><a href="#">Тест-драйв</a></li>
+                <li><a href="#">Про Chevrolet</a></li>
+                <li><a href="contacts.html">Контакти</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <div>
+            <h4>Контактна інформація</h4>
+            <p>
+                «Chevrolet Motors Company»<br /><br />
+                вул. Планета Марс, 1а, Київ, Україна, 08020</p>
+        </div>
+        <div class="contacts">
+            <h4>Контактні телефони:</h4>
+            <p>Факс: +38 (044) 888-88-88<br /><br />
+            Відділ продажів:<br />
+            Тел.: +38 (044) 888-88-88<br />
+            E-mail: <a href="mailto:sales11@chevrolet.com">sales11@chevrolet.com</a><br /><br />
+            Відділ сервісу:<br />
+            Тел.: +38 (044) 888-88-88<br />
+            E-mail: <a href="mailto:service11@chevrolet.com">service11@chevrolet.com</a></p>
+        </div>
+        <div class="contacts">
+            <h4>Режим роботи:</h4>
+            <p>Відділ продажів:<br />
+            Пн-Cб: 8:00 — 20:00<br />
+            Нд: 10:00 — 18:00<br /><br />
+
+            Відділ сервісу та запчастин:<br />
+            Пн-Cб: 8:00 — 20:00<br />
+            Нд: 9:00 — 18:00</p>
+        </div>
+        <div class="contacts">
+            <img src="images/dealer.png" />
+        </div>
+        <div id="map"></div>
+    </section>
+
+    <footer>
+        <div class="footer-line"></div>
+        <div class="icon">
+            <ul>
+                <li>
+                    Ми у соцмережах
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/icons/Facebook.png" alt="facebook" />
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/icons/Twitter.png" alt="twitter" />
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/icons/Youtube.png" alt="youtube" />
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/icons/Pinterest.png" alt="pinterest" />
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/icons/Google.png" alt="google_plus" />
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-map">
+            <a href="">Мапа сайту</a>
+        </div>  
+    </footer>
+    <script>
+        function contactMap() {
+            var myCenter = new google.maps.LatLng(50.488859, 30.513417);
+          var mapCanvas = document.getElementById("map");
+          var mapOptions = {center: myCenter, zoom: 15};
+          var map = new google.maps.Map(mapCanvas, mapOptions);
+          var marker = new google.maps.Marker({position:myCenter});
+          marker.setMap(map);
+          google.maps.event.addListener(marker, 'click', function () {
+              map.setZoom(18);
+              map.setCenter(marker.getPosition());
+          });
+        }
+    </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?callback=contactMap"></script>
+    </body>
+</html>
