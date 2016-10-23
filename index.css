@@ -32,8 +32,6 @@ a {
 #logo {
     padding: 0px;
     height: 80px;
-    /*margin-left: 100px;
-    margin-right: 50%;*/
     background-color: transparent;
 }
 .row::after {
