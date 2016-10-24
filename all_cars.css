@@ -3,9 +3,6 @@
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     background-color: white;
-    /*background-color: #2F2F2F;*/
-    /*background-image:url("images/impala-8.jpg");*/
-    /*background-repeat: no-repeat;*/
 }
 
 .top-nav {
@@ -33,8 +30,6 @@
 #logo {
     padding: 0px;
     height: 80px;
-    /*margin-left: 100px;
-    margin-right: 50%;*/
     background-color: transparent;
 }
 .row::after {
@@ -46,18 +41,12 @@
 @media only screen and (min-width: 300px) {
     .model-list-3 {width: 287px;}
     .top-nav li {width: 100%;}
-    #logo {margin-left: 0px;
-           margin-right: 0%;
-    }
     .top-nav li a {padding: 15px 10px;}
 }
 
 @media only screen and (min-width: 600px) {
     .model-list-2 {width: 574px;}
     .top-nav li {width: 50%;}
-    #logo {margin-left: 0px;
-           margin-right: 0%;
-    }
     .top-nav li a {padding: 15px 10px;}
 }
 
@@ -65,7 +54,7 @@
     .model-list {width: 862px;}
     .top-nav li {width: inherit;}
     #logo {margin-left: 0px;
-           margin-right: 0%;
+           margin-right: 0px;
     }
     .top-nav li a {padding: 30px 10px;} 
 }
@@ -73,13 +62,13 @@
 @media only screen and (min-width: 1024px) {
     .top-nav li {width: inherit;}
     #logo {margin-left: 0px;
-           margin-right: 50%;
+           margin-right: 120px;
     } 
 }
 
 @media only screen and (min-width: 1200px) {
     #logo {margin-left: 100px;
-           margin-right: 50%;
+           margin-right: 230px;
     } 
 }
 
@@ -93,7 +82,6 @@
     background-color: white;
 }
 .model:hover {
-    /*background-color: dimgrey;*/
     box-shadow: 0px 0px 4px 4px #cccccc;
 }
 figcaption {
@@ -125,15 +113,12 @@ footer {
     margin: 0 auto;
 }
 
-.icon {
+#icon {
+    list-style-type: none;
     color: gray;
 }
 
-.icon ul {
-    list-style-type: none;
-}
-
-.icon ul li {
+#icon li {
     float: left;
     padding: 0px 10px 40px 0px;
 }
