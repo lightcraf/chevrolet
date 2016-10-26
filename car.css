@@ -1,0 +1,411 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.sonic-bg-top {
+    background-image:url("images/chevy sonic/sonic_top.jpg");
+}
+
+.spark-bg-top {
+    background-image:url("images/chevy spark/spark_top.jpg");
+}
+
+.impala-bg-top {
+    background-image:url("images/chevy impala/impala_top.jpg");
+}
+
+.trax-bg-top {
+    background-image:url("images/chevy trax/trax_top.jpg");
+}
+
+.equinox-bg-top {
+    background-image:url("images/chevy equinox/equinox_top.jpg");
+}
+
+.tahoe-bg-top {
+    background-image:url("images/chevy tahoe/tahoe_top.jpg");
+}
+
+.cruze-bg-top {
+    background-image:url("images/chevy cruze/cruze_top.jpg");
+}
+
+.suburban-bg-top {
+    background-image:url("images/chevy suburban/suburban_top.jpg");
+}
+
+.traverse-bg-top {
+    background-image:url("images/chevy traverse/traverse_top.jpg");
+}
+
+.ss-bg-top {
+    background-image:url("images/chevy ss/ss_top.jpg");
+}
+
+a {text-decoration: none;}
+
+.top-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.top-nav li {
+    float: left;
+}
+
+.top-nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 30px 10px;
+    font-size: 16px;
+}
+
+.top-nav li a:hover:not(.logo) {
+    background-color: black;
+    color: darkorange;
+}
+
+#logo {
+    padding: 0px;
+    height: 80px;
+    background-color: transparent;
+}
+
+@media only screen and (max-width: 900px) {
+    .top-nav li:not(:first-child) {display: none;}
+    .top-nav li.menu {
+        float: right;
+        display: inline-block;
+        position: absolute;
+        right: 0;
+        top: 0;
+  }
+    .menu a {
+        width: 40px;
+        height: 80px;
+        line-height: 80px;
+        padding: 0px !important;
+        font-size: 26px !important;
+  }
+    .top-nav.responsive li {
+        float: none;
+        display: inline;
+  }
+    .top-nav.responsive li a {
+        display: block;
+        text-align: center;
+        background-color: #262626;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+    #logo {margin-left: 0px;
+           margin-right: 0px;
+    }
+    .top-nav li a {padding: 15px 10px;}
+    .tab-links li {
+        list-style: none;
+        text-align: center;
+    }
+    .tab-links {
+        padding: 0px !important;
+    }
+    #car-img img {
+        width: 100%;
+        height: auto;
+        vertical-align: bottom;
+    }
+    body {
+        background-image: none !important;
+    }
+    .top-nav {background-color: #262626;}
+    #cover {display: none;}
+    #video {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    #logo {margin-left: 0px;
+           margin-right: 0px;
+    }
+    .top-nav li a {padding: 30px 10px;}
+    .tab-links li {
+        list-style: none;
+        text-align: center;
+    }
+    .cover {display: block;}
+    .tabs {top: 220px;}
+    .menu {display: none;}
+    #video {
+        width: 48%;
+        float: right;
+        padding: 0px 0px 20px 30px;
+    }
+    #car-img {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .top-nav li {width: inherit;}
+    #logo {margin-left: 0px;
+           margin-right: 120px;
+    }
+    .tab-links li {
+        float: left;
+        list-style: none;
+        width: 20%;
+        text-align: center;
+    }
+    .cover {display: block;}
+    .tabs {top: 220px;}
+    .menu {display: none;}
+}
+
+@media only screen and (min-width: 1200px) {
+    #logo {margin-left: 100px;
+           margin-right: 230px;
+    }
+}
+
+#cover {
+    position: absolute;
+    width: 100%;
+    height: 350px;
+    top: 220px;
+    background: transparent linear-gradient(to bottom, transparent 0%, #FFFFFF 60%) repeat scroll 0% 0%;
+}
+
+/*----- Tabs -----*/
+.tabs {
+    position: relative;
+}
+
+.tab-links:after {
+    display: block;
+    clear: both;
+    content: '';
+}
+
+.tab-links a {
+    padding: 9px 0px;
+    display: inline-block;
+    background-color: rgba(81, 79, 79, 0.75);
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    transition: all linear 0.15s;
+    width: 100%;
+    text-decoration: none;
+}
+
+.tab-links a:hover {
+    background-color: #3c3c3c;
+    color: white;
+    text-decoration: none;
+}
+
+.tab-links{
+    padding: 0px 30px 0px 30px;
+    margin: 0px;
+}
+
+li.active a, li.active a:hover {
+    background-color: black;
+    color: darkorange;
+}
+
+.tab-content {
+    padding: 15px;
+    background-color: white;
+    max-width: 100%;
+    margin: 0px 30px;
+}
+
+.tab {
+    display: none;
+}
+
+.tab.active {
+    display: block;
+}
+
+#tab1 {
+    text-align: justify;
+    text-indent: 40px;
+}
+
+#tab2, #tab3 {
+    padding-left: 5.4%;
+}
+
+#tab2 a img, #tab3 a img {
+    width: 100%;
+    height: auto;
+}
+
+#tab2 a, #tab3 a {
+    display: inline-block;
+}
+
+#tab4, #tab5 {
+    overflow-x: auto;
+}
+
+video {
+    width: 100%;
+    height: auto;
+    float: right;
+}
+
+#video {
+    float: right;
+    padding: 0px 0px 20px 30px;
+}
+
+.cc-license {
+    font-size: 12px;
+    color: gray;
+}
+
+.specification {
+    background-color: white;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.spec-sonic td {
+    border-right: 2px solid #514F4F;
+}
+
+.specification td:first-child {
+    border-left: none;
+}
+
+.specification th:last-child, td:last-child {
+    border-right: none;
+}
+
+.specification tr:nth-child(odd) {
+    background-color: #dedfdf;
+}
+
+.specification th {
+    background-color: #514F4F;
+    color: white;
+    padding: 10px;
+    border-right: 2px solid white;
+}
+
+th > p {
+    margin: 0px;
+    font-size: 12px;
+}
+
+.specification td {
+    text-align: center;
+    padding: 5px;
+    border-left: 2px solid white;
+}
+
+.specification tr:first-child {
+    border-bottom: 5px solid white;
+}
+
+td:first-child {
+    text-align: left;
+}
+
+#interior-hide, #exterior-hide, #safety-hide, #other-hide, #warr-hide {
+    cursor: pointer;
+    border-bottom: 1px solid white;
+}
+
+#hide-1, #hide-2, #hide-3, #hide-4, #hide-5 {
+    position: absolute;
+    width: 28px;
+    height: 20px;
+    background-color: white;
+}
+
+.minus {
+    position: relative;
+    height: 2px;
+    width: 12px;
+    background-color: #514F4F;
+    top: 9px;
+    left: 8px;
+}
+
+.plus {
+    position: relative;
+    height: 12px;
+    width: 2px;
+    background-color: #514F4F;
+    left: 13px;
+    top: 2px;
+}
+
+.tab-sonic-width-1 {
+    width: 486px;
+}
+
+.tab-width-1 {
+    width: 50%;
+}
+
+.tab-width-2 {
+    width: auto;
+}
+
+.tab-equinox-width-2 {
+    width: 12.5%;
+}
+
+/*-------- Footer --------*/
+footer {
+    position: relative;
+    top: 220px;
+}
+
+.footer-line {
+    width: 95%;
+    height: 2px;
+    background-color: #262626;
+    margin: 0 auto;
+}
+
+#icon {
+    list-style-type: none;
+    color: gray;
+}
+
+#icon li {
+    float: left;
+    padding: 0px 10px 40px 0px;
+}
+
+.footer-map {
+    text-align: right;
+    padding-right: 40px;
+    margin-top: 15px;
+}
+
+.footer-map a {
+    color: black;
+    text-decoration: none;
+}
+
+.footer-map a:hover {
+    text-decoration: underline;
+}
