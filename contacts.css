@@ -37,12 +37,6 @@
     background-color: transparent;
 }
 
-.row::after {
-    content: "";
-    clear: both;
-    display: block;
-}
-
 @media only screen and (min-width: 300px) {
     .top-nav li {width: 100%;}
     .top-nav li a {padding: 15px 10px;}
@@ -58,7 +52,8 @@
     #logo {margin-left: 0px;
            margin-right: 0px;
     }
-    .top-nav li a {padding: 30px 10px;} 
+    .top-nav li a {padding: 30px 10px;}
+    .col-4 {width: 33.33%;}
 }
 
 @media only screen and (min-width: 1024px) {
@@ -81,14 +76,15 @@ section {
 }
 
 .contacts {
-    float: left;
-    max-width: 350px;
     line-height: 140%;
-    padding: 0px 50px 20px 0px;
+}
+
+.col-4 {
+    float: left;
 }
 
 .contacts img {
-    width: 120%;
+    width: 100%;
     height: auto;
     padding-top: 40px;
 }

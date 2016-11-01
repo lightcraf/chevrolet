@@ -4,9 +4,11 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #2F2F2F;
 }
+
 a {
     text-decoration: none;
 }
+
 .top-nav {
     list-style-type: none;
     margin: 0;
@@ -14,9 +16,11 @@ a {
     overflow: hidden;
     background-color: #262626;
 }
+
 .top-nav li {
     float: left;
 }
+
 .top-nav li a {
     display: block;
     color: white;
@@ -25,19 +29,16 @@ a {
     text-decoration: none;
     font-size: 16px;
 }
+
 .top-nav li a:hover:not(.logo) {
     background-color: black;
     color: darkorange;
 }
+
 #logo {
     padding: 0px;
     height: 80px;
     background-color: transparent;
-}
-.row::after {
-    content: "";
-    clear: both;
-    display: block;
 }
 
 @media only screen and (min-width: 300px) {
@@ -70,6 +71,7 @@ a {
            margin-right: 230px;
     } 
 }
+
 .btn-details {
     position: absolute;
     top: 89.6%;
@@ -80,6 +82,7 @@ a {
     border: 1px solid white;
     font-size: 1.25vw;
 }
+
 .btn-details:hover {
     background-color: transparent;
 }

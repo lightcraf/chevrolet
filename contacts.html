@@ -4,7 +4,6 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Chevrolet - Contacts</title>
-        <link rel="icon" href="/favicon.ico" type="image/x-icon">
 	    <link rel="stylesheet" href="contacts.css">
     </head>
 <body>
@@ -29,7 +28,7 @@
                 «Chevrolet Motors Company»<br /><br />
                 вул. Планета Марс, 1а, Київ, Україна, 08020</p>
         </div>
-        <div class="contacts">
+        <div class="contacts col-4">
             <h4>Контактні телефони:</h4>
             <p>Факс: +38 (044) 888-88-88<br /><br />
             Відділ продажів:<br />
@@ -39,7 +38,7 @@
             Тел.: +38 (044) 888-88-88<br />
             E-mail: <a href="mailto:service11@chevrolet.com">service11@chevrolet.com</a></p>
         </div>
-        <div class="contacts">
+        <div class="contacts col-4">
             <h4>Режим роботи:</h4>
             <p>Відділ продажів:<br />
             Пн-Cб: 8:00 — 20:00<br />
@@ -49,8 +48,8 @@
             Пн-Cб: 8:00 — 20:00<br />
             Нд: 9:00 — 18:00</p>
         </div>
-        <div class="contacts">
-            <img src="images/dealer.png" />
+        <div class="contacts col-4">
+            <img src="images/dealer.jpg" alt="dealer"/>
         </div>
         <div id="map"></div>
     </section>
@@ -91,6 +90,7 @@
             <a href="">Мапа сайту</a>
         </div>  
     </footer>
+
     <script>
         function contactMap() {
             var myCenter = new google.maps.LatLng(50.488859, 30.513417);
@@ -105,7 +105,6 @@
           });
         }
     </script>
-
     <script src="https://maps.googleapis.com/maps/api/js?callback=contactMap"></script>
     </body>
 </html>
