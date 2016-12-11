@@ -1,8 +1,8 @@
 ﻿var app = angular.module("carApp", []);
 app.controller("carCtrl", function ($scope) {
     $scope.products = [
-        { value: "spark", label: "Spark" },
-        { value: "sonic hatch", label: "Sonic" }
+        { value: "Spark", label: "Spark" },
+        { value: "Sonic hatch", label: "Sonic" }
     ];
     $scope.spark = [
         { "image": "images/chevy spark/Accessories/acc_1.jpg", "header": "Передній центральний органайзер з відсіками", "description": "Тримайте всі Ваші необхідні для подорожі маленькі предмети в передньому центральному органайзері.", "art_num": "Арт. № 42402540", "price": "20" },
