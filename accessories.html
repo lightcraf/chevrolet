@@ -23,9 +23,9 @@
             </nav>
         </header>
 
-        <h2 id="acces-car">Аксесуари Chevrolet <span id="model-name"></span></h2>
+        <h2 id="acces-car">Аксесуари Chevrolet {{modSel.label}}</h2>
 
-        <img src="images/models/Chevrolet-icon.png" id="acces-car-img" alt="" />
+        <img src="images/models/Chevrolet-icon.png" data-ng-src="images/models/{{modSel.value}}.png" id="acces-car-img" />
 
         <p id="acces-text">
             Надайте індивідуальності Вашому Chevrolet за допомогою оригінальних аксесуарів, розроблених
@@ -36,15 +36,12 @@
 
         <form>
             Вибрати модель:
-            <select id="select-model" data-ng-model="modSel">
-                <option value=""></option>
-                <option value="Spark">Spark</option>
-                <option value="Sonic hatch">Sonic</option>
+            <select id="select-model" data-ng-model="modSel" data-ng-options="prod as prod.label for prod in products">
             </select>
         </form>
 
-        <div id="acces-tab" data-ng-switch="modSel">
-            <div data-ng-switch-when="Spark">
+        <div id="acces-tab" data-ng-switch="modSel.value">
+            <div data-ng-switch-when="spark">
                 <table>
                     <tr data-ng-repeat="x in spark">
                         <td><img data-ng-src="{{ x.image }}"></td>
@@ -54,7 +51,7 @@
                     </tr>
                 </table>
             </div>
-            <div data-ng-switch-when="Sonic hatch">
+            <div data-ng-switch-when="sonic hatch">
                 <table>
                     <tr data-ng-repeat="x in sonic">
                         <td><img data-ng-src="{{ x.image }}"></td>

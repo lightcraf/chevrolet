@@ -1,16 +1,9 @@
-﻿(function () {
-    var carsImages = ["Chevrolet-icon", "Spark", "Sonic hatch"]; //images from folder models
-    var selectModel = document.getElementById("select-model");
-    var carImg = document.getElementById("acces-car-img");
-    var modelName = document.getElementById("model-name");
-    selectModel.addEventListener("change", function () {
-        var i = selectModel.selectedIndex;
-        modelName.innerHTML = selectModel.options[i].text;
-        carImg.src = "images/models/" + carsImages[i] + ".png"; });
-})();
-
-var app = angular.module("carApp", []);
+﻿var app = angular.module("carApp", []);
 app.controller("carCtrl", function ($scope) {
+    $scope.products = [
+        { value: "spark", label: "Spark" },
+        { value: "sonic hatch", label: "Sonic" }
+    ];
     $scope.spark = [
         { "image": "images/chevy spark/Accessories/acc_1.jpg", "header": "Передній центральний органайзер з відсіками", "description": "Тримайте всі Ваші необхідні для подорожі маленькі предмети в передньому центральному органайзері.", "art_num": "Арт. № 42402540", "price": "20" },
         { "image": "images/chevy spark/Accessories/acc_2.jpg", "header": "Центральний ковпачок з логотипом Chevrolet", "description": "Прикрасьте зовнішній вигляд коліс Вашого Spark цими відмінними центральними ковпачками.", "art_num": "Арт. № 42371986", "price": "20" },
