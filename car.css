@@ -277,6 +277,7 @@ video {
 }
 
 .specification {
+    position: relative;
     background-color: white;
     border-collapse: collapse;
     width: 100%;
