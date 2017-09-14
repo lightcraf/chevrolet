@@ -1,35 +1,38 @@
 ﻿<!DOCTYPE html>
 <html>
-    <head lang="uk-UA">
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Chevrolet - Sonic</title>
-        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-	    <link rel="stylesheet" href="car.css">
-        <link href="lightbox.css" rel="stylesheet">
-    </head>
-<body class="sonic-bg-top">
+<head lang="uk-UA">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chevrolet - Sonic</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link href="lightbox.css" rel="stylesheet">
+</head>
+<body>
     <header>
-        <nav>
-            <ul class="top-nav" id="top-nav-2">
-                <li><a href="index.html" id="logo"><img src="images/Chevrolet-logo2.png" alt="Chevrolet - Find new roads" /></a></li>
-                <li><a href="all_cars.html">Модельний ряд</a></li>
-                <li><a href="accessories.html">Аксесуари</a></li>
-                <li><a href="#service">Сервіс та запчастини</a></li>
-                <li><a href="#drive">Тест-драйв</a></li>
-                <li><a href="#about">Про Chevrolet</a></li>
-                <li><a href="contacts.html">Контакти</a></li>
-                <li class="menu"><a href="#"><div id="menu-icon"></div></a>
-                </li>
+        <nav class="top-nav" role="navigation">
+            <h1 class="logo">
+                <a href="index.html"><img src="images/Chevrolet-logo2.png" alt="Chevrolet" title="Chevrolet - Find new roads" /></a>
+            </h1>
+            <div class="top-menu-icon-wrapper">
+                <div class="top-menu-icon"></div>
+            </div>
+            <ul id="show-top-nav" class="top-nav-list top-nav-list-responsive">
+                <li><a href="all_cars.html" class="nav-link">Модельний ряд</a></li>
+                <li><a href="accessories.html" class="nav-link">Аксесуари</a></li>
+                <li><a href="#service" class="nav-link">Сервіс та запчастини</a></li>
+                <li><a href="#drive" class="nav-link">Тест-драйв</a></li>
+                <li><a href="#about" class="nav-link">Про Chevrolet</a></li>
+                <li><a href="contacts.html" class="nav-link">Контакти</a></li>
             </ul>
         </nav>
     </header>
 
-    <div id="cover"></div>
-    <div id="car-img">
+    <div class="bg-image">
         <img src="images/chevy sonic/sonic_top.jpg" alt="Sonic" />
     </div>
-    <div class="tabs">
+
+    <div class="tab-wrapper">
         <ul class="tab-links">
             <li class="active"><a href="#tab1">Sonic</a></li>
             <li><a href="#tab2">Екстер'єр</a></li>
@@ -38,30 +41,36 @@
             <li><a href="#tab5">Комплектація та ціни</a></li>
         </ul>
 
-        <div class="tab-content">
-            <div id="tab1" class="tab active">
-                <p><b>CHEVROLET SPARK 2016 - БІЛЬША ПОТУЖНІСТЬ, ЕФЕКТИВНІСТЬ ТА БЕЗПЕКА</b></p>
-                <div id="video">
-                    <video controls class="video">
+        <div class="tab-content-wrapper">
+            <div id="tab1" class="tab-content active">
+                <h2 class="tab-description-title">Chevrolet Sonic 2016 - Більша потужність, ефективність та безпека</h2>
+                <div class="video-wrapper">
+                    <video controls class="main-video">
                         <source src="images/chevy sonic/Sonic.mp4" type="video/mp4">
                         Your browser does not support HTML5 video.
                     </video>
                 </div>
-                <p>Кожен день Chevrolet Sonic продовжує збільшувати кількість нових клієнтів Chevrolet завдяки
-                 його юнацького дизайну, ефективності і новітнім функціям з’єднання.</p>
-                <p>Sonic залишається на передньому краю технологій в своєму сегменті, пропонуючи OnStar з 4G LTE
-                 і стандартну вбудовану Wi-Fi точку доступу, яка забезпечує мобільне з’єднання для водія та пасажирів, 
-                щоб завжди бути на зв'язку. Де б автомобіль не знаходився точка доступу дозволяє скористатися 
-                пробним пакетом три місяці/три гігабайта.</p>
-                <p>Покупці Sonic можуть вибирати між двома типами кузова: чотирьох дверний седан і п'яти дверний 
-                хетчбек моделей LS, LT, LTZ і RS. Чи це автомобіль седан або хетчбек, сміливий та спортивний
-                 дизайн Sonic’а викликає увагу всюди де він їде. Люди з захопленням реагують, коли вони бачать
-                 відкриті фари, двухпортову решітку радіатора і мотоциклетні задні ліхтарі Sonic’а. І будьте готові
-                 до захоплюючого досвіду водіння, оскільки на відміну від інших, Sonic пропонує доступну 
-                потужність, яку ви завжди хотіли.</p>
+                <p class="tab-description-text">
+                    Кожен день Chevrolet Sonic продовжує збільшувати кількість нових клієнтів Chevrolet завдяки
+                    його юнацького дизайну, ефективності і новітнім функціям з’єднання.
+                </p>
+                <p class="tab-description-text">
+                    Sonic залишається на передньому краю технологій в своєму сегменті, пропонуючи OnStar з 4G LTE
+                    і стандартну вбудовану Wi-Fi точку доступу, яка забезпечує мобільне з’єднання для водія та пасажирів,
+                    щоб завжди бути на зв'язку. Де б автомобіль не знаходився точка доступу дозволяє скористатися
+                    пробним пакетом три місяці/три гігабайта.
+                </p>
+                <p class="tab-description-text">
+                    Покупці Sonic можуть вибирати між двома типами кузова: чотирьох дверний седан і п'яти дверний
+                    хетчбек моделей LS, LT, LTZ і RS. Чи це автомобіль седан або хетчбек, сміливий та спортивний
+                    дизайн Sonic’а викликає увагу всюди де він їде. Люди з захопленням реагують, коли вони бачать
+                    відкриті фари, двухпортову решітку радіатора і мотоциклетні задні ліхтарі Sonic’а. І будьте готові
+                    до захоплюючого досвіду водіння, оскільки на відміну від інших, Sonic пропонує доступну
+                    потужність, яку ви завжди хотіли.
+                </p>
             </div>
 
-            <div id="tab2" class="tab">
+            <div id="tab2" class="tab-content tab-content-exterior">
                 <a href="images/chevy sonic/Exterior/sonic_exterior_1.jpg" data-lightbox="interior">
                     <img src="images/chevy sonic/Exterior/sonic_exterior_1s.jpg">
                 </a>
@@ -95,7 +104,7 @@
                 <p class="cc-license">Джерело зображення: офіційний вебсайт Chevrolet</p>
             </div>
 
-            <div id="tab3" class="tab">
+            <div id="tab3" class="tab-content tab-content-interior">
                 <a href="images/chevy sonic/Interior/sonic_interior_1.jpg" data-lightbox="exterior">
                     <img src="images/chevy sonic/Interior/sonic_interior_1s.jpg">
                 </a>
@@ -132,17 +141,18 @@
                 <p class="cc-license">Джерело зображення: офіційний вебсайт Chevrolet</p>
             </div>
 
-            <div id="tab4" class="tab">
-                <table class="specification spec-sonic">
+            <div id="tab4" class="tab-content tab-content-specification">
+                <table class="specification-table spec-sonic">
                     <tr>
-                        <th class="tab-sonic-width-1"></th>
-                        <th class="tab-width-2">LS</th>
-                        <th class="tab-width-2">LS</th>
-                        <th class="tab-width-2">LT</th>
-                        <th class="tab-width-2">LT</th>
-                        <th class="tab-width-2">LTZ</th>
-                        <th class="tab-width-2">RS</th>
-                        <th class="tab-width-2">RS</th></tr>
+                        <th class="spec-table-col-width"></th>
+                        <th>LS</th>
+                        <th>LS</th>
+                        <th>LT</th>
+                        <th>LT</th>
+                        <th>LTZ</th>
+                        <th>RS</th>
+                        <th>RS</th>
+                    </tr>
                     <tr><th colspan="8">Кузов</th></tr>
                     <tr><td>Тип кузова:</td><td colspan="7">Хетчбек</td></tr>
                     <tr><td>Кількість місць:</td><td colspan="7">5</td></tr>
@@ -159,8 +169,14 @@
                     <tr><td>Ступінь стиску:</td><td colspan="4">10,5:1</td><td colspan="3">9,5:1</td></tr>
                     <tr><th colspan="8">Трансмісія</th></tr>
                     <tr>
-                        <td>Коробка передач:</td><td>Механічна</td><td>Автоматична</td><td>Механічна</td>
-                        <td>Автоматична</td><td>Автоматична</td><td>Механічна</td><td>Автоматична</td>
+                        <td>Коробка передач:</td>
+                        <td>Механічна</td>
+                        <td>Автоматична</td>
+                        <td>Механічна</td>
+                        <td>Автоматична</td>
+                        <td>Автоматична</td>
+                        <td>Механічна</td>
+                        <td>Автоматична</td>
                     </tr>
                     <tr><td>Кількість передач:</td><td>5</td><td>6</td><td>5</td><td>6</td><td>6</td><td>6</td><td>6</td></tr>
                     <tr><td>Тип приводу:</td><td colspan="7">Передній</td></tr>
@@ -197,21 +213,22 @@
                 </table>
             </div>
 
-            <div id="tab5" class="tab">
-                <table class="specification">
+            <div id="tab5" class="tab-content tab-content-specification">
+                <table class="specification-table">
                     <tr>
-                        <th style="width:680px"></th>
-                        <th style="width:48px">LS<p>1.8L MT</p></th>
-                        <th style="width:48px">LS<p>1.8L AT</p></th>
-                        <th style="width:48px">LT<p>1.8L MT</p></th>
-                        <th style="width:48px">LT<p>1.8L AT</p></th>
-                        <th style="width:48px">LTZ<p>1.4L AT</p></th>
-                        <th style="width:48px">RS<p>1.4L MT</p></th>
-                        <th style="width:48px">RS<p>1.4L AT</p></th></tr>
+                        <th></th>
+                        <th>LS<br /><span class="specification-model-powertrain">1.8L MT</span></th>
+                        <th>LS<br /><span class="specification-model-powertrain">1.8L AT</span></th>
+                        <th>LT<br /><span class="specification-model-powertrain">1.8L MT</span></th>
+                        <th>LT<br /><span class="specification-model-powertrain">1.8L AT</span></th>
+                        <th>LTZ<br /><span class="specification-model-powertrain">1.4L AT</span></th>
+                        <th>RS<br /><span class="specification-model-powertrain">1.4L MT</span></th>
+                        <th>RS<br /><span class="specification-model-powertrain">1.4L AT</span></th>
+                    </tr>
                     <tr><th colspan="8">Ціна</th></tr>
                     <tr><td>Ціна від:</td><td>$15,820</td><td>$17,070</td><td>$17,630</td><td>$19,020</td><td>$21,220</td><td>$20,970</td><td>$22,370</td></tr>
-                    
-                    <tr><th id="interior-hide" colspan="8"><div id="hide-1"><div class="minus"></div><div></div></div>Інтер'єр</th></tr>
+
+                    <tr><th class="interior-header" colspan="8"><div class="minus-button"></div>Інтер'єр</th></tr>
                     <tr class="spec-interior"><td>Система фільтрації повітря:</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td></tr>
                     <tr class="spec-interior"><td>Кондиціонер:</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td></tr>
                     <tr class="spec-interior"><td>Допоміжні ручки:</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td></tr>
@@ -274,8 +291,8 @@
                     <tr class="spec-interior"><td>Закриваємі косметичні дзеркала в сонцезахисних козирках:</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td></tr>
                     <tr class="spec-interior"><td>Електричні склопідйомники з захистом від защемлення:</td><td>&#x2015</td><td>&#x2015</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td></tr>
                     <tr class="spec-interior"><td>Механічні склопідйомники:</td><td>+</td><td>+</td><td>&#x2015</td><td>&#x2015</td><td>&#x2015</td><td>&#x2015</td><td>&#x2015</td></tr>
-                    
-                    <tr><th id="exterior-hide" colspan="8"><div id="hide-2"><div class="minus"></div><div></div></div>Екстер'єр</th></tr>
+
+                    <tr><th class="exterior-header" colspan="8"><div class="minus-button"></div>Екстер'єр</th></tr>
                     <tr class="spec-exterior"><td>Денні ходові вогні:</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td></tr>
                     <tr class="spec-exterior"><td>Дверні ручки у колір кузова:</td><td>+</td><td>+</td><td>+</td><td>+</td><td>&#x2015</td><td>+</td><td>+</td></tr>
                     <tr class="spec-exterior"><td>Хромовані дверні ручки:</td><td>&#x2015</td><td>&#x2015</td><td>&#x2015</td><td>&#x2015</td><td>+</td><td>&#x2015</td><td>&#x2015</td></tr>
@@ -299,8 +316,8 @@
                     <tr class="spec-exterior"><td>Легкосплавні фарбовані диски 17":</td><td>&#x2015</td><td>&#x2015</td><td>&#x2015</td><td>&#x2015</td><td>+</td><td>&#x2015</td><td>&#x2015</td></tr>
                     <tr class="spec-exterior"><td>Легкосплавні диски 17" фарбовані у колір Midnight Silver:</td><td>&#x2015</td><td>&#x2015</td><td>&#x2015</td><td>&#x2015</td><td>&#x2015</td><td>+</td><td>+</td></tr>
                     <tr class="spec-exterior"><td>Склоочисник заднього скла з омивачем:</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td></tr>
-                    
-                    <tr><th id="safety-hide" colspan="8"><div id="hide-3"><div class="minus"></div><div></div></div>Безпека</th></tr>
+
+                    <tr><th class="safety-header" colspan="8"><div class="minus-button"></div>Безпека</th></tr>
                     <tr class="spec-safety"><td>Система оповіщення лобового зіткнення:</td><td>&#x2015</td><td>&#x2015</td><td>&#x25A2</td><td>&#x25A2</td><td>&#x25A2</td><td>&#x25A2</td><td>&#x25A2</td></tr>
                     <tr class="spec-safety"><td>Система попередження про виїзд з полоси руху LDWS:</td><td>&#x2015</td><td>&#x2015</td><td>&#x25A2</td><td>&#x25A2</td><td>&#x25A2</td><td>&#x25A2</td><td>&#x25A2</td></tr>
                     <tr class="spec-safety"><td>Дві фронтальні подушки безпеки:</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td></tr>
@@ -316,8 +333,8 @@
                     <tr class="spec-safety"><td>Антибуксувальна система (TCS):</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td></tr>
                     <tr class="spec-safety"><td>Антиблокувальна гальмівна система (ABS):</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td></tr>
                     <tr class="spec-safety"><td>Система контролю тиску в шинах:</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td></tr>
-                    
-                    <tr><th id="other-hide" colspan="8"><div id="hide-4"><div class="minus"></div><div></div></div>Інше</th></tr>
+
+                    <tr><th class="other-header" colspan="8"><div class="minus-button"></div>Інше</th></tr>
                     <tr class="spec-other"><td>Захист батареї від розрядження:</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td></tr>
                     <tr class="spec-other"><td>Iммобілайзер двигуна:</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td></tr>
                     <tr class="spec-other"><td>Вихлопна труба з нержавіючої сталі:</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td></tr>
@@ -326,58 +343,40 @@
                     <tr class="spec-other"><td>Сигналізація:</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td></tr>
                     <tr class="spec-other"><td>Тимчасове запасне колесо (сталевий диск + T115/70R16):</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td></tr>
                     <tr class="spec-other"><td>Домкрат з інструментами:</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td></tr>
-                    
-                    <tr><th id="warr-hide" colspan="8"><div id="hide-5"><div class="minus"></div><div></div></div>Гарантія</th></tr>
+
+                    <tr><th class="warr-header" colspan="8"><div class="minus-button"></div>Гарантія</th></tr>
                     <tr class="spec-warr"><td>Планове обслуговування:</td><td colspan="7">2 роки або 40000 км</td></tr>
                     <tr class="spec-warr"><td>Гарантія від корозії:</td><td colspan="7">3 роки або 60000 км</td></tr>
                     <tr class="spec-warr"><td>Гарантія від наскрізної корозії:</td><td colspan="7">6 років або 160000 км</td></tr>
                 </table>
-                <p><b>Позначення:</b> + <i>- обладнання автомобіля, враховане у його вартості;</i> &#x2015 <i>- обладнання автомобіля відсутнє у даній комплектаці;</i>
+                <p>
+                    <b>Позначення:</b> + <i>- обладнання автомобіля, враховане у його вартості;</i> &#x2015 <i>- обладнання автомобіля відсутнє у даній комплектаці;</i>
                     &#x25A2 <i>- додаткове (опційне) обладнання;</i>
                 </p>
             </div>
         </div>
     </div>
 
-    <footer>
-        <div class="footer-line"></div>
-        <ul id="icon">
-            <li>
-                Ми у соцмережах
-            </li>
-            <li>
-                <a href="#facebook">
-                    <img src="images/icons/Facebook.png" alt="facebook" />
-                </a>
-            </li>
-            <li>
-                <a href="#twitter">
-                    <img src="images/icons/Twitter.png" alt="twitter" />
-                </a>
-            </li>
-            <li>
-                <a href="#youtube">
-                    <img src="images/icons/Youtube.png" alt="youtube" />
-                </a>
-            </li>
-            <li>
-                <a href="#pinterest">
-                    <img src="images/icons/Pinterest.png" alt="pinterest" />
-                </a>
-            </li>
-            <li>
-                <a href="#google">
-                    <img src="images/icons/Google.png" alt="google_plus" />
-                </a>
-            </li>
+    <footer class="footer">
+        <ul class="footer-social-icon-wrapper">
+            <li>Ми у соцмережах</li>
+            <li><a href="#" class="icon-link icon-link-facebook" target="_blank" title="Follow on Facebook">Facebook</a></li>
+            <li><a href="#" class="icon-link icon-link-twitter" target="_blank" title="Follow on Twitter">Twitter</a></li>
+            <li><a href="#" class="icon-link icon-link-google" target="_blank" title="Follow on Google Plus">Google Plus</a></li>
+            <li><a href="#" class="icon-link icon-link-pinterest" target="_blank" title="Follow on Pinterest">Pinterest</a></li>
+            <li><a href="#" class="icon-link icon-link-youtube" target="_blank" title="Follow on Youtube">Youtube</a></li>
         </ul>
+
         <div class="footer-map">
             <a href="">Мапа сайту</a>
         </div>
-        
     </footer>
-        <script src="lightbox-plus-jquery.min.js"></script>
-        <script src="car.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    </body>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous">
+    </script>
+    <script src="lightbox.js"></script>
+    <script src="script.js"></script>
+</body>
 </html>

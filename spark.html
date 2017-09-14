@@ -9,8 +9,8 @@
         <link href="lightbox.css" rel="stylesheet">
     </head>
 
-<body class="spark-bg-top">
-    <header class="header">
+<body>
+    <header>
         <nav class="top-nav" role="navigation">
             <h1 class="logo">
                 <a href="index.html"><img src="images/Chevrolet-logo2.png" alt="Chevrolet" title="Chevrolet - Find new roads" /></a>
@@ -29,11 +29,10 @@
         </nav>
     </header>
 
-
-    <div id="cover"></div>
-    <div id="car-img">
+    <div class="bg-image">
         <img src="images/chevy spark/spark_top.jpg" alt="Spark" />
     </div>
+
     <div class="tab-wrapper">
         <ul class="tab-links">
             <li class="active"><a href="#tab1">Spark</a></li>
@@ -47,7 +46,7 @@
             <div id="tab1" class="tab-content active">
                 <h2 class="tab-description-title">Chevrolet Spark 2016 - Більша потужність, ефективність та безпека</h2>
                 <div class="video-wrapper">
-                    <video controls class="video">
+                    <video controls class="main-video">
                         <source src="images/chevy spark/Spark.mp4" type="video/mp4">
                         Your browser does not support HTML5 video.
                     </video>
@@ -156,7 +155,7 @@
 
             <div id="tab4" class="tab-content tab-content-specification">
                 <table class="specification-table">
-                    <tr><th class="tab-width-1"></th><th>LS</th><th>LS</th><th>1LT</th><th>1LT</th><th>2LT</th><th>2LT</th></tr>
+                    <tr><th class="spec-table-col-width"></th><th>LS</th><th>LS</th><th>1LT</th><th>1LT</th><th>2LT</th><th>2LT</th></tr>
                     <tr><th colspan="7">Кузов</th></tr>
                     <tr><td>Тип кузова:</td><td colspan="6">Хетчбек</td></tr>
                     <tr><td>Кількість місць:</td><td colspan="6">4</td></tr>
@@ -222,7 +221,7 @@
                     <tr><th colspan="7">Ціна</th></tr>
                     <tr><td>Ціна від:</td><td>$13,535</td><td>$14,635</td><td>$15,560</td><td>$16,660</td><td>$17,060</td><td>$18,160</td></tr>
                     
-                    <tr><th class="interior-header" colspan="7"><div id="hide-1"></div>Інтер'єр</th></tr>
+                    <tr><th class="interior-header" colspan="7"><div class="minus-button"></div>Інтер'єр</th></tr>
                     <tr class="spec-interior"><td>Аудіо система (AM/FM стерео, Bluetooth для музики та телефону, електронний годинник):</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td></tr>
                     <tr class="spec-interior"><td>Інформаційний 7" кольоровий дисплей:</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td></tr>
                     <tr class="spec-interior"><td>4 динаміків:</td><td>+</td><td>+</td><td>&#x2015</td><td>&#x2015</td><td>&#x2015</td><td>&#x2015</td></tr>
@@ -271,7 +270,7 @@
                     <tr class="spec-interior"><td>Допоміжна електрична розетка:</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td></tr>
                     <tr class="spec-interior"><td>Система дистанційного керування замками:</td><td>&#x2015</td><td>&#x2015</td><td>+</td><td>+</td><td>+</td><td>+</td></tr>
                     
-                    <tr><th class="exterior-header" colspan="7"><div id="hide-2"></div>Екстер'єр</th></tr>
+                    <tr><th class="exterior-header" colspan="7"><div class="minus-button"></div>Екстер'єр</th></tr>
                     <tr class="spec-exterior"><td>Сонце поглинаюче скло:</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td></tr>
                     <tr class="spec-exterior"><td>Галогенові фари:</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td></tr>
                     <tr class="spec-exterior"><td>Дверні ручки у колір кузова:</td><td>+</td><td>+</td><td>+</td><td>+</td><td>&#x2015</td><td>&#x2015</td></tr>
@@ -291,7 +290,7 @@
                     <tr class="spec-exterior"><td>Шини P185/55R15 всесезонні:</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td></tr>
                     <tr class="spec-exterior"><td>Склоочисник заднього скла:</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td></tr>
 
-                    <tr><th class="safety-header" colspan="7"><div id="hide-3"></div>Безпека</th></tr>
+                    <tr><th class="safety-header" colspan="7"><div class="minus-button"></div>Безпека</th></tr>
                     <tr class="spec-safety"><td>Автоматичне аварійне відмикання дверних замків:</td><td>&#x2015</td><td>&#x2015</td><td>+</td><td>+</td><td>+</td><td>+</td></tr>
                     <tr class="spec-safety"><td>Система оповіщення лобового зіткнення:</td><td>&#x2015</td><td>&#x2015</td><td>&#x2015</td><td>&#x2015</td><td>&#x2015</td><td>&#x25A2</td></tr>
                     <tr class="spec-safety"><td>Дві фронтальні подушки безпеки:</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td></tr>
@@ -307,7 +306,7 @@
                     <tr class="spec-safety"><td>Антибуксувальна система (TCS):</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td></tr>
                     <tr class="spec-safety"><td>Система контролю тиску в шинах:</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td></tr>
                     
-                    <tr><th class="other-header" colspan="7"><div id="hide-4"></div>Інше</th></tr>
+                    <tr><th class="other-header" colspan="7"><div class="minus-button"></div>Інше</th></tr>
                     <tr class="spec-other"><td>Пусковий підігрівач двигуна:</td><td>&#x25A2</td><td>&#x25A2</td><td>&#x25A2</td><td>&#x25A2</td><td>&#x25A2</td><td>&#x25A2</td></tr>
                     <tr class="spec-other"><td>Система допомоги при паркуванні (RPA):</td><td>&#x2015</td><td>&#x2015</td><td>&#x2015</td><td>&#x2015</td><td>+</td><td>+</td></tr>
                     <tr class="spec-other"><td>Домкрат з інструментами:</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td></tr>
@@ -316,7 +315,7 @@
                     <tr class="spec-other"><td>Система моніторингу ресурсу мастила:</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td></tr>
                     <tr class="spec-other"><td>Тимчасове запасне колесо (сталевий диск + T105/70D14):</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td></tr>
                     
-                    <tr><th class="warr-header" colspan="7"><div id="hide-5"></div>Гарантія</th></tr>
+                    <tr><th class="warr-header" colspan="7"><div class="minus-button"></div>Гарантія</th></tr>
                     <tr class="spec-warr"><td>Планове обслуговування:</td><td colspan="6">2 роки або 40000 км</td></tr>
                     <tr class="spec-warr"><td>Гарантія від корозії:</td><td colspan="6">3 роки або 60000 км</td></tr>
                     <tr class="spec-warr"><td>Гарантія від наскрізної корозії:</td><td colspan="6">6 років або 160000 км</td></tr>
@@ -328,37 +327,6 @@
     </div>
 
     <footer class="footer">
-        <!--<ul class="footer-social-icon-wrapper">
-            <li>
-                Ми у соцмережах
-            </li>
-            <li>
-                <a href="#facebook">
-                    <img src="images/icons/Facebook.png" alt="facebook" />
-                </a>
-            </li>
-            <li>
-                <a href="#twitter">
-                    <img src="images/icons/Twitter.png" alt="twitter" />
-                </a>
-            </li>
-            <li>
-                <a href="#youtube">
-                    <img src="images/icons/Youtube.png" alt="youtube" />
-                </a>
-            </li>
-            <li>
-                <a href="#pinterest">
-                    <img src="images/icons/Pinterest.png" alt="pinterest" />
-                </a>
-            </li>
-            <li>
-                <a href="#google">
-                    <img src="images/icons/Google.png" alt="google_plus" />
-                </a>
-            </li>
-        </ul>-->
-
         <ul class="footer-social-icon-wrapper">
             <li>Ми у соцмережах</li>
             <li><a href="#" class="icon-link icon-link-facebook" target="_blank" title="Follow on Facebook">Facebook</a></li>
