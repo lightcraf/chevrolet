@@ -1,13 +1,16 @@
 ﻿<!DOCTYPE html>
-<html>
-<head lang="uk-UA">
+<html lang="uk-UA">
+<head>
     <meta charset="utf-8">
+    <meta name="description" content="Chevrolet accessories">
+    <meta name="keywords" content="chevrolet, accessories">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chevrolet Accessories</title>
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0-rc.2/angular.min.js"></script>
 </head>
+
 <body data-ng-app="carApp" data-ng-controller="carCtrl">
     <header>
         <nav class="top-nav dark-top-nav-bg" role="navigation">
@@ -17,7 +20,7 @@
             <div class="top-menu-icon-wrapper">
                 <div class="top-menu-icon"></div>
             </div>
-            <ul id="show-top-nav" class="top-nav-list top-nav-list-responsive">
+            <ul class="top-nav-list">
                 <li><a href="all_cars.html" class="nav-link">Модельний ряд</a></li>
                 <li><a href="accessories.html" class="nav-link">Аксесуари</a></li>
                 <li><a href="#service" class="nav-link">Сервіс та запчастини</a></li>
@@ -28,42 +31,44 @@
         </nav>
     </header>
 
-    <div class="accessories-wrapper">
-        <h2>Аксесуари Chevrolet {{modSel.label}}</h2>
-        <img src="images/models/Chevrolet-icon.png" data-ng-src="images/models/{{modSel.value}}.png" class="current-model-img" />
-        <p class="accessories-text">
-            Надайте індивідуальності Вашому Chevrolet за допомогою оригінальних аксесуарів, розроблених
-            спеціально для Вашого автомобіля. Вони створені відповідно до найвищих стандартів, що гарантує
-            неперевершену якість, до якої Ви звикли. Створіть власний стиль, вибравши оригінальний
-            аксесуар в галереї Chevrolet.
-        </p>
+    <main class="main">
+        <div class="accessories-wrapper">
+            <h2>Аксесуари Chevrolet {{modSel.label}}</h2>
+            <img src="images/models/Chevrolet-icon.png" data-ng-src="images/models/{{modSel.value}}.png" class="current-model-img" />
+            <p class="accessories-text">
+                Надайте індивідуальності Вашому Chevrolet за допомогою оригінальних аксесуарів, розроблених
+                спеціально для Вашого автомобіля. Вони створені відповідно до найвищих стандартів, що гарантує
+                неперевершену якість, до якої Ви звикли. Створіть власний стиль, вибравши оригінальний
+                аксесуар в галереї Chevrolet.
+            </p>
 
-        Вибрати модель:
-        <select class="select-model" data-ng-model="modSel" data-ng-options="prod as prod.label for prod in products"></select>
+            Вибрати модель:
+            <select class="select-model" data-ng-model="modSel" data-ng-options="prod as prod.label for prod in products"></select>
 
-        <div class="accessories-table-wrapper" data-ng-switch="modSel.value">
-            <div data-ng-switch-when="Spark">
-                <table class="accessories-table">
-                    <tr data-ng-repeat="x in spark">
-                        <td><img class="accessories-product-img" data-ng-src="{{ x.image }}"></td>
-                        <td><b>{{ x.header }}</b><p>{{ x.description }}</p></td>
-                        <td>{{ x.art_num }}</td>
-                        <td>{{ x.price | currency }}</td>
-                    </tr>
-                </table>
-            </div>
-            <div data-ng-switch-when="Sonic hatch">
-                <table class="accessories-table">
-                    <tr data-ng-repeat="x in sonic">
-                        <td><img class="accessories-product-img" data-ng-src="{{ x.image }}"></td>
-                        <td><b>{{ x.header }}</b><p>{{ x.description }}</p></td>
-                        <td>{{ x.art_num }}</td>
-                        <td>{{ x.price | currency }}</td>
-                    </tr>
-                </table>
+            <div class="accessories-table-wrapper" data-ng-switch="modSel.value">
+                <div data-ng-switch-when="Spark">
+                    <table class="accessories-table">
+                        <tr data-ng-repeat="x in spark">
+                            <td><img class="accessories-product-img" data-ng-src="{{ x.image }}"></td>
+                            <td><b>{{ x.header }}</b><p>{{ x.description }}</p></td>
+                            <td>{{ x.art_num }}</td>
+                            <td>{{ x.price | currency }}</td>
+                        </tr>
+                    </table>
+                </div>
+                <div data-ng-switch-when="Sonic hatch">
+                    <table class="accessories-table">
+                        <tr data-ng-repeat="x in sonic">
+                            <td><img class="accessories-product-img" data-ng-src="{{ x.image }}"></td>
+                            <td><b>{{ x.header }}</b><p>{{ x.description }}</p></td>
+                            <td>{{ x.art_num }}</td>
+                            <td>{{ x.price | currency }}</td>
+                        </tr>
+                    </table>
+                </div>
             </div>
         </div>
-    </div>
+    </main>
 
     <footer class="footer">
         <ul class="footer-social-icon-wrapper">
@@ -76,15 +81,15 @@
         </ul>
 
         <div class="footer-map">
-            <a href="">Мапа сайту</a>
+            <a href="#">Мапа сайту</a>
         </div>
     </footer>
 
-    <script>
-        document.getElementsByClassName("top-menu-icon-wrapper")[0].addEventListener("click", function () {
-            document.getElementsByClassName("top-nav-list")[0].classList.toggle("top-nav-list-responsive");
-        });
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" 
+        crossorigin="anonymous">
     </script>
+    <script src="script.js"></script>
     <script src="accessoriesCtrl.js"></script>
 </body>
 </html>
