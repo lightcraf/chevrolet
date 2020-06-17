@@ -1,5 +1,5 @@
 ﻿body {
-    margin: 0px;
+    margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     background-color: #ffffff;
     display: -ms-flexbox;
@@ -15,8 +15,8 @@ a {
 
 ul {
     list-style-type: none;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
 
 .main {
@@ -34,7 +34,7 @@ ul {
 
 .logo {
     float: left;
-    margin: 0px 0px 0px 90px;
+    margin: 0 0 0 90px;
 }
 
 .logo img {
@@ -61,7 +61,7 @@ ul {
 .nav-link {
     display: block;
     color: #ffffff;
-    padding: 0px 10px;
+    padding: 0 10px;
     line-height: 80px;
 }
 
@@ -94,9 +94,8 @@ ul {
 .footer {
     width: 95%;
     height: 54px;
-    margin: 0px auto;
+    margin: 30px auto 24px auto;
     border-top: 2px solid #262626;
-    padding-bottom: 24px;
 }
 
 .footer-social-icon-wrapper {
@@ -107,14 +106,14 @@ ul {
 .footer-social-icon-wrapper li {
     float: left;
     color: gray;
-    margin: 0px 10px 0px 0px;
+    margin: 0 10px 0 0;
 }
 
 .icon-link {
     display: block;
     width: 32px;
     height: 32px;
-    font-size: 0px;
+    font-size: 0;
 }
 
 .icon-link-facebook {
@@ -139,7 +138,7 @@ ul {
 
 .footer-map {
     text-align: right;
-    padding: 15px 40px 0px 0px;
+    padding: 15px 40px 0 0;
 }
 
 .footer-map a {
@@ -169,6 +168,7 @@ ul {
   
 .slide {
     position: absolute;
+    width: 100%;
     transition: 1s ease;
     opacity: 0;
 }
@@ -212,7 +212,7 @@ ul {
     height: 50px;
     line-height: 50px;
     width: auto;
-    padding: 0px 14px;
+    padding: 0 14px;
     color: #ffffff;
     font-size: 33px;
     -webkit-transition: 0.6s ease;
@@ -241,7 +241,7 @@ ul {
     cursor: pointer;
     height: 10px;
     width: 10px;
-    margin: 0px 3px;
+    margin: 0 3px;
     background-color: transparent;
     border: 1px solid #ffffff;
     display: inline-block;
@@ -267,7 +267,7 @@ ul {
 .car-hero-image {
     width: 100%; 
     position: absolute;
-    top: 0px;
+    top: 0;
 }
 
 .car-hero-image img {
@@ -291,8 +291,8 @@ ul {
 }
 
 .tab-links {
-    padding: 0px 30px 0px 30px;
-    margin: 0px;
+    padding: 0 30px;
+    margin: 0;
 }
 
 .tab-links li {
@@ -308,7 +308,7 @@ ul {
 }
 
 .tab-links a {
-    padding: 9px 0px;
+    padding: 9px 0;
     display: inline-block;
     background-color: rgba(81, 79, 79, 0.75);
     font-size: 16px;
@@ -334,7 +334,7 @@ ul {
     padding: 15px;
     background-color: #ffffff;
     max-width: 100%;
-    margin: 0px 30px;
+    margin: 0 30px;
 }
 
 .tab-content {
@@ -374,7 +374,7 @@ ul {
 .video-wrapper {
     width: 50%;
     float: right;
-    padding: 0px 0px 15px 30px;
+    padding: 0 0 15px 30px;
 }
 
 .main-video {
@@ -477,9 +477,9 @@ ul {
 
 .model-wrapper {
     max-width: 900px;
-    margin: 0px auto;
+    margin: 0 auto;
     text-align: center;
-    padding: 15px 0px 20px 0px;
+    padding: 15px 0 20px 0;
 }
 
 .coming-soon {
@@ -493,17 +493,17 @@ ul {
 }
 
 .model:hover:not(.coming-soon) {
-    box-shadow: 0px 0px 4px 4px #cccccc;
+    box-shadow: 0 0 4px 4px #cccccc;
 }
 
 .model figure {
-    margin: 0px;
+    margin: 0;
 }
 
 .model-name {
     border-top: 1px solid #000000;
     padding-top: 5px;
-    margin: 0px 10px;
+    margin: 0 10px;
     color: #000000;
     letter-spacing: 2px;
     font-size: 20px;
@@ -514,20 +514,20 @@ ul {
     padding-bottom: 5px;
     font-size: 14px;
     text-align: center;
-    margin: 0px;
+    margin: 0;
 }
 /*------------- end all cars -------------*/
 
 /*------------- accessories -------------*/
 .accessories-wrapper {
     max-width: 1080px;
-    margin: 0px auto;
-    padding: 0px 15px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
 .current-model-img {
     float: left;
-    margin: 0px 40px 30px 0px;
+    margin: 0 40px 30px 0;
 }
 
 .accessories-text {
@@ -548,7 +548,7 @@ ul {
 
 .accessories-table {
     max-width: 1000px;
-    margin: 0px auto;
+    margin: 0 auto;
     border-collapse: collapse;
 }
 
@@ -577,7 +577,7 @@ ul {
 /*------------- contact -------------*/
 .contact-wrapper {
     max-width: 960px;
-    margin: 0px auto;
+    margin: 0 auto;
     padding: 30px 15px;
 }
 
@@ -597,7 +597,7 @@ ul {
 .dealer-img {
     max-width: 100%;
     height: auto;
-    padding: 30px 0px 20px 0px;
+    padding: 30px 0 20px 0;
 }
 
 .map {
@@ -612,7 +612,7 @@ ul {
     }
 
     .logo {
-        margin: 0px 0px 0px 10px;
+        margin: 0 0 0 10px;
     }
 
     .top-menu-icon-wrapper {
@@ -634,7 +634,7 @@ ul {
     .nav-link {
         line-height: 40px;
         text-align: center;
-        padding: 0px;
+        padding: 0;
     }
 
     .car-hero-image {
@@ -646,11 +646,11 @@ ul {
     }
 
     .tab-wrapper {
-        margin-top: 0px;
+        margin-top: 0;
     }
 
     .tab-links {
-        padding: 0px;
+        padding: 0;
     }
 
     .tab-links li {
@@ -659,13 +659,13 @@ ul {
     }
 
     .tab-content-wrapper {
-        margin: 0px;
+        margin: 0;
     }
 
     .video-wrapper {
         width: 100%;
         float: none;
-        padding: 0px;
+        padding: 0;
     }
 
     .contact-box {
